@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        String str="I am java developer I am proud of it";
+        
+        String target="am";
+        int count=counter(str,target);
+        
+        System.out.println("occurance of word "+ target +" is "+count);
+        
+        
+    }
+    
+    public static int counter(String str, String target){
+        int count=0;
+        String []str1=str.split(" ");
+        
+        for(String s:str1){
+            if(s.equalsIgnoreCase(target))
+            {
+                count++;
+            }
+        }
+        return count;
+    }
+     
+      
+}
