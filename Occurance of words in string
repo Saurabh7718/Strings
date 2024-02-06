@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        String str="I am java developer I am proud of it";
+        HashMap<String,Integer> map=new HashMap<String,Integer>();
+         
+        String word[]=str.split(" ");
+         
+        for(String s:word){
+             if(map.containsKey(s)){
+                 map.put(s,map.get(s)+1);
+             }
+             else{
+                 map.put(s,1);
+             }
+         }
+        System.out.println(map);
+     }
+}
