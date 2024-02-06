@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        String str="I am java developer I am proud of it";
+        char word[]=str.toCharArray();
+        char word2[]=new char[word.length];
+        
+        for(int i=word.length-1, j=0;i>=0;i--,j++){
+            word2[j]=word[i];
+        }
+        
+        for(char i:word2){
+            System.out.print(i);
+        }
+     }
+}
