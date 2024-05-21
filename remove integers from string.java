@@ -3,12 +3,13 @@ public class HelloWorld {
         // Original string with numbers
         String input = "saurabh123";
         
-        // Extract all numeric characters
-        String output = input.replaceAll("[^\\d]", "");
+        // Remove all numeric characters
+        String output = input.replaceAll("\\d", "");
         
         // Print the resulting string
         System.out.println("Original string: " + input);
-        System.out.println("String with only numbers: " + output);
+        System.out.println("String after removing numbers: " + output);
     }
 }
+
 //output saurabh
