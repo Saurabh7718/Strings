@@ -19,3 +19,23 @@ public class HelloWorld{
 /*ava -cp /tmp/x3U4H74ac7/HelloWorld
 ti fo duorp ma I repoleved avaj ma I
 === Code Execution Successful ===*/
+
+
+import java.util.*;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+       String str="saam";
+       char []ch=str.toCharArray();
+       
+       StringBuilder builder=new StringBuilder();
+       
+       for(int i=ch.length-1;i>=0;i--){
+           builder.append(ch[i]);
+           
+           
+       }
+       System.out.println(builder);    
+       
+    }
+}
